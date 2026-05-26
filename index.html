@@ -791,7 +791,7 @@ function buildMsg(){
 }
 function updatePreview(){const el=document.getElementById('previewBox');if(el)el.textContent=buildMsg();}
 async function sendToJandi(){
-  const wh=localStorage.getItem('jandi_wh');
+  const wh='https://wh.jandi.com/connect-api/webhook/26098605/6886dd36a519482a0703c7871c85e162';
   if(!wh){showToast('설정에서 Webhook URL을 먼저 입력해줘','ng');openModal();return;}
   const btn=document.getElementById('sendBtn'); btn.disabled=true; btn.textContent='전송 중...';
   try{
